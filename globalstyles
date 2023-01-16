@@ -1,0 +1,57 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 992px) {
+  .section {
+    width: 33.33%;
+    float: left;
+  }
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 50%;
+    float: left;
+  }
+  #section3 {
+    clear: both;
+    width: 100%;
+  }
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+    float: none;
+  }
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
