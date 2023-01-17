@@ -1,57 +1,63 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
-}
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
-h1 {
-  text-align: center;
-  margin: 20px 0;
+
+/* Food Box Styles */
+.food-box {
+    background-color: #F5D2B2; /* light brown */
+    color: #333; /* dark black */
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+/* Section Title Styles */
+.section-title-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ccc;
+    padding: 10px;
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 992px) {
-  .section {
-    width: 33.33%;
-    float: left;
-  }
-  .section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+    .food-box {
+        width: 25%;
+        float: left;
+        margin: 0 1%;
+    }
 }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .section {
-    width: 50%;
-    float: left;
-  }
-  #section3 {
-    clear: both;
-    width: 100%;
-  }
-  .section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+    .food-box {
+        width: 50%;
+        float: left;
+        margin: 0 1%;
+    }
+    .food-box:nth-of-type(3) {
+        clear: both;
+        width: 100%;
+    }
 }
 
 /* Mobile Styles */
 @media screen and (max-width: 767px) {
-  .section {
-    width: 100%;
-    float: none;
-  }
-  .section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+    .food-box {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* Styles for 1920x1080 resolution */
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .food-box {
+        width: 20%; /* adjust the width as needed */
+        float: left;
+        margin: 0 1%;
+    }
 }
 
